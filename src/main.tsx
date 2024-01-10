@@ -4,6 +4,7 @@ import './index.css'
 import Pokemon from './Pokemon.tsx'
 import Fight from './Fight.tsx'
 import PokemonWithParam from './pokemonWithParam.tsx'
+// import NestedMain from './nestedMain.tsx'
 
 import {
   createBrowserRouter,
@@ -38,6 +39,16 @@ const router = createBrowserRouter([
     path: "/pokemon/fight",
     element: <Fight />,
   },
+  // {
+  //   path: "/nested",
+  //   element: <NestedMain />,
+  //   children: [
+  //     {
+  //       path: "/",
+  //       element: <>check</>
+  //     }
+  //   ]
+  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
